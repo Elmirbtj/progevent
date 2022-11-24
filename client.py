@@ -7,7 +7,7 @@ def client():
 
     client_socket = socket.socket()
     client_socket.connect((host, port))
-    user = input('Entrez votre nom d\'utilisateur : ')
+    user = input('Entre votre nom d\'utilisateur : ')
     message = input(f"{user} -> ")
     while message != 'arret':
         client_socket.send(message.encode())
