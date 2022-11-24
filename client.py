@@ -16,7 +16,7 @@ def client():
             client_socket.close()
             client()
             break
-        print('Received from server: ' + data)
+        print('Received from server:' + data)
         message = input(f"{user}> ")
     client_socket.close()
 
